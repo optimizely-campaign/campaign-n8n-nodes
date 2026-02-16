@@ -1,11 +1,8 @@
-![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
-
 # n8n-nodes-optimizely-campaign
 
 This package provides **n8n community nodes** for interacting with the **Optimizely Campaign API**.
 
 It enables you to process response data in real time using webhooks, manage recipients, and send transactional emails directly from your n8n workflows.
-
 
 ## Features
 
