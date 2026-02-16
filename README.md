@@ -4,7 +4,6 @@ This package provides **n8n community nodes** for interacting with the **Optimiz
 
 It enables you to process response data in real time using webhooks, manage recipients, and send transactional emails directly from your n8n workflows.
 
-
 ## Features
 
 - 📡 **Webhook Trigger**
