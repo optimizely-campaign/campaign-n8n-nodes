@@ -1,5 +1,5 @@
 {
-	"name": "@sybopti/n8n-nodes-optimizely-campaign",
+	"name": "@optimizely-campaign/n8n-nodes-optimizely-campaign",
 	"version": "0.1.0",
 	"description": "n8n community node for interacting with the Optimizely Campaign API",
 	"license": "MIT",
@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/sybopti/n8n-nodes-optimizely-campaign.git"
+		"url": "https://github.com/optimizely-campaign/campaign-n8n-nodes.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",
