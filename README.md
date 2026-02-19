@@ -22,7 +22,7 @@ It enables you to process response data in real time using webhooks, manage reci
 
 ## Installation
 
-### Community Nodes (n8n.cloud & self-hosted)
+### Community Nodes (self-hosted)
 
 1. Open **Settings → Community Nodes**
 2. Click **Install**
