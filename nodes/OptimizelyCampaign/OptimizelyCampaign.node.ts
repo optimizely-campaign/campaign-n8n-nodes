@@ -63,16 +63,16 @@ export class OptimizelyCampaign implements INodeType {
 						action: 'Create a recipient',
 					},
 					{
-						name: 'Update',
-						value: 'update',
-						description: 'Update a recipient',
-						action: 'Update a recipient',
-					},
-					{
 						name: 'Get Recipient',
 						value: 'getRecipient',
 						description: 'Get a recipient with selected attributes',
 						action: 'Get a recipient',
+					},
+					{
+						name: 'Update',
+						value: 'update',
+						description: 'Update a recipient',
+						action: 'Update a recipient',
 					}
 				],
 				default: 'create',
