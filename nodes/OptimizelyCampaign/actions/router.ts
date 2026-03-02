@@ -1,4 +1,4 @@
-import { IExecuteFunctions, INodeExecutionData, IDataObject } from 'n8n-workflow';
+import { IExecuteFunctions, INodeExecutionData, IDataObject, NodeOperationError } from 'n8n-workflow';
 import * as recipient from './recipient/Recipient.resource';
 import * as transactionalMail from './transactionalMail/TransactionalMail.resource';
 
@@ -24,13 +24,14 @@ export async function router(this: IExecuteFunctions): Promise<INodeExecutionDat
 
 		const resourceModule = resources[resource];
 		if (!resourceModule) {
-			throw new Error(`Unknown resource '${String(resource)}'.`);
+			throw new NodeOperationError(this.getNode(), `Unknown resource '${String(resource)}'.`);
 		}
 
 		const opHandler = resourceModule[operation];
 		if (!opHandler?.execute) {
 			const available = Object.keys(resourceModule).sort().join(', ') || '—';
-			throw new Error(
+			throw new NodeOperationError(
+				this.getNode(),
 				`Unknown operation '${operation}' for resource '${String(resource)}'. Available: ${available}`,
 			);
 		}
