@@ -1,6 +1,6 @@
 {
 	"name": "@optimizely-campaign/n8n-nodes-optimizely-campaign",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "n8n community node for interacting with the Optimizely Campaign API",
 	"license": "MIT",
 	"homepage": "https://www.optimizely.com",
